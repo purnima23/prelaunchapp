@@ -1,13 +1,58 @@
-<div class="hero">
-    <p class="large brandon">Harry&#8217;s is live</p>
-    <p class="small brandon">Respecting the Face and Wallet<br>Since Like...Right Now.</p>
+<!-- <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 homepage_bg">
+       <div class="imageAndText">
+            <div class="layer">
+        
+                <div id="revolution">
+                    <h1> DISCOVER A NEW WAY TO </h1>
+                    <h1> STYLE YOURSELF </h1>
+                </div>
+                <div id="pull-left">
+                    <h5> Give us details and get access </h5>
+                    <h5> to more information about our launch </h5>
+                    <h5>and future oppurtunities to win some prizes </h5>
+                </div>
+                <%#= render 'form' %>
+            </div>
+      </div>
+   </div>
 </div>
+
+</div>
+ -->
+<style>
+body {
+  background-image: url(assets/home/fashion_banner.jpg);
+  background-color: white; 
+  background-repeat: no-repeat;  
+  background-attachment: scroll;  
+  background-position: 0% 0%;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#revolution > h1 {
+  color: #fff;
+}
+
+#pull-left > h5 {
+  color:  #C0C0C0 ;
+}
+</style>
+<body>
 
 <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
     <% if Rails.application.config.ended %>
-        <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
-        <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
-        <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
+        <div id="revolution">
+              <h1> DISCOVER A NEW WAY TO </h1>
+              <h1> STYLE YOURSELF </h1>
+            </div>
+            <div id="pull-left">
+              <h5> Give us details and get access </h5>
+              <h5> to more information about our launch </h5>
+              <h5>and future oppurtunities to win some prizes </h5>
+            </div>
         <p class="again brandon">Thank You Again!</p>
     <% else %>
         <div class="key"></div>
@@ -18,3 +63,5 @@
         <% end %>
     <% end %>
 </div>
+
+</body>
